@@ -1,0 +1,253 @@
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "password"
+}
+
+
+### GET request to /todos/?status=TO%20DO
+GET http://localhost:3000/todos/?status=TO%20DO
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
+
+### GET request to /todos/?priority=HIGH
+GET http://localhost:3000/todos/?priority=HIGH
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
+
+### GET request to /todos/?priority=HIGH&status=IN%20PROGRESS
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
+
+### GET request to /todos/?category=WORK&status=DONE
+GET http://localhost:3000/todos/?category=WORK&status=DONE
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
+
+### GET request to /todos/?category=LEARNING&priority=HIGH
+GET http://localhost:3000/todos/?category=LEARNING&priority=HIGH
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
+
+### GET request to /todos/?category=HOME
+GET http://localhost:3000/todos/?category=HOME
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
+
+### GET request to /todos/?search_q=Buy
+GET http://localhost:3000/todos/?search_q=Buy
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
+
+### GET request to /todos/:todoId/
+GET http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
+
+### GET request to /agenda/?date=2024-06-30
+GET http://localhost:3000/agenda/?date=2021-12-12
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI0OTE1MjYzLCJleHAiOjE3MjUwMDE2NjN9.NL5L1vYRrrx5gaz9J9f01zIHLHk8cRzfTIP6RmQgf90
+Content-Type: application/json
+
+###
+
+### GET request to /todos/ with invalid todo status
+GET http://localhost:3000/todos/?status=INVALID_STATUS
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI0OTE1MjYzLCJleHAiOjE3MjUwMDE2NjN9.NL5L1vYRrrx5gaz9J9f01zIHLHk8cRzfTIP6RmQgf90
+Content-Type: application/json
+
+###
+
+### GET request to /todos/ with invalid todo priority
+GET http://localhost:3000/todos/?priority=INVALID_PRIORITY
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI0OTE1MjYzLCJleHAiOjE3MjUwMDE2NjN9.NL5L1vYRrrx5gaz9J9f01zIHLHk8cRzfTIP6RmQgf90
+Content-Type: application/json
+
+###
+
+### POST request to /todos/
+POST http://localhost:3000/todos/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+ "id": 6,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+
+###
+
+### POST request to /todos/ with invalid todo status
+POST http://localhost:3000/todos/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "todo": "New Todo Item",
+  "priority": "HIGH",
+  "category": "WORK",
+  "status": "INVALID_STATUS",
+  "dueDate": "2024-07-05"
+}
+
+###
+
+### POST request to /todos/ with invalid todo priority
+POST http://localhost:3000/todos/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "todo": "New Todo Item",
+  "priority": "INVALID_PRIORITY",
+  "category": "WORK",
+  "status": "TO DO",
+  "dueDate": "2024-07-05"
+}
+
+###
+
+### POST request to /todos/ with invalid todo category
+POST http://localhost:3000/todos/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "todo": "New Todo Item",
+  "priority": "HIGH",
+  "category": "INVALID_CATEGORY",
+  "status": "TO DO",
+  "dueDate": "2024-07-05"
+}
+
+###
+
+### PUT request to /todos/1/ with 'status' property in the body
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "status": "IN PROGRESS"
+}
+
+###
+
+### PUT request to /todos/1/ with 'priority' property in the body
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "priority": "LOW"
+}
+
+###
+
+### PUT request to /todos/1/ with 'todo' property in the body
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "todo": "Updated Todo Item"
+}
+
+###
+
+### PUT request to /todos/1/ with 'category' property in the body
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "category": "HOME"
+}
+
+###
+
+### PUT request to /todos/1/ with 'dueDate' property in the body
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "dueDate": "2024-07-10"
+}
+
+###
+
+### PUT request to /todos/1/ with invalid due date
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "dueDate": "Invalid Date"
+}
+
+###
+
+### PUT request to /todos/1/ with invalid status
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "status": "INVALID_STATUS"
+}
+
+###
+
+### PUT request to /todos/1/ with invalid priority
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "priority": "INVALID_PRIORITY"
+}
+
+###
+
+### PUT request to /todos/1/ with invalid category
+PUT http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+{
+  "category": "INVALID_CATEGORY"
+}
+
+###
+
+### DELETE request to /todos/1/
+DELETE http://localhost:3000/todos/1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzI1MDMzMjk3LCJleHAiOjE3MjUxMTk2OTd9.JUxhZJCdmRd09ZOKud63NkAFkCc2Aj-LmpOGHO0dX30
+Content-Type: application/json
+
+###
